@@ -4,21 +4,30 @@
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
+
+
 let choice
- let flag = true;
+
+let flag = true;
 
 while(flag){
-let choice = prompt('scegli pari o dispari') .toUpperCase();
-if((choice === 'PARI') || (choice==='DISPARI')){
+
+choice = prompt('scegli pari o dispari') .toUpperCase();
+
+if((choice === 'PARI') || (choice ==='DISPARI')){
     flag = false
 }
 console.log(choice)
+
 }
 
 let userNumber
+
 let fleg = true
+
 while(fleg){
-    let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'))
+
+    userNumber = parseInt(prompt('inserisci un numero da 1 a 5'))
 
     if((userNumber>=1) && (userNumber<=5)){
         fleg=false
@@ -56,7 +65,7 @@ function randomNumber (min,max){
 function isEven (number){
     
     if(number % 2 == 0){
-     return true
+        return true
     }
     else{
         return false
