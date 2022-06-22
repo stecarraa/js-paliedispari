@@ -4,12 +4,29 @@
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
+let choice
+ let flag = true;
 
+while(flag){
 let choice = prompt('scegli pari o dispari') .toUpperCase();
+if((choice === 'PARI') || (choice==='DISPARI')){
+    flag = false
+}
 console.log(choice)
+}
 
-const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'))
-console.log(userNumber)
+let userNumber
+let fleg = true
+while(fleg){
+    let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'))
+
+    if((userNumber>=1) && (userNumber<=5)){
+        fleg=false
+    }
+    
+    console.log(userNumber)
+
+}
 
 const pcNumber = randomNumber(1,5)
 console.log(pcNumber)
@@ -18,7 +35,7 @@ console.log(pcNumber)
 
 
 sum = userNumber + pcNumber
-console.log(sum)
+
 
 if (((choice === "PARI") && (isEven(sum) === true)) || ((choice === "DISPARI") && (isEven(sum) === false ))){
     console.log(`vince l'utente`);
